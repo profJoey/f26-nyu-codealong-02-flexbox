@@ -1,97 +1,83 @@
-# Student Project Template
+## **Code-Along Instructions**
 
-### 🚨 Critical Rules - READ FIRST!
+### **What Is a Code-Along?**
 
-#### **1. ALWAYS Work in Your Codespace - NEVER Edit Directly on GitHub**
-- **❌ DON'T:** Edit files directly on GitHub.com (using the web editor)
-- **✅ DO:** Make ALL changes inside your Codespace
-- **Why:** Direct edits on GitHub can cause conflicts with your Codespace work
+A code-along is exactly what it sounds like: I write code, you write the same code. It's not a tutorial you watch — it's a session you participate in. Every line I type, you type. When I break something on purpose (or by accident), yours breaks too, and we fix it together.
 
-#### **2. Save Your Work by Committing Changes**
-- If you close a codespace, it will save your work even if you forget to commit
-- **BUT:** Your Codespace gets deleted after 30 days of no use
-- **Best Practice:** Commit your changes every time you finish working
-
-### 💾 How to Save Your Work
-
-#### **Using VS Code Interface (Simple Steps)**
-1. **Make your changes** to HTML, CSS, or JavaScript files
-2. **Save files** (Ctrl+S or Cmd+S)
-3. **Go to Source Control tab** (left sidebar, looks like a branch icon)
-4. **Write a commit message** describing your changes (e.g., "Added navigation menu")
-5. **Click "Commit & Push"** button
-
-### 🔄 Daily Workflow
-
-#### **Starting Work:**
-1. **Go to your repository** on GitHub.com
-2. **Click "Code" → "Codespaces"**
-3. **Open your existing Codespace** (or create new one if needed)
-
-#### **During Work:**
-1. **Edit your files** 
-2. **Test your website** using Live Server (right-click index.html → "Open with Live Server")
-3. **Save files regularly** (Ctrl+S)
-
-#### **Ending Work Session:**
-1. **Commit your changes** using Source Control tab
-2. **Write a good commit message** 
-3. **Click "Commit & Push"**
-4. **Close the browser tab**
-
-### 💡 Quick Tips
-
-- **Use good commit messages**: "Added contact form" is better than "updated files"
-- **Test before saving**: Always preview your changes with Live Server first
-- **Save often**: Get in the habit of committing after each major change
+**Why we do this:** The fastest way to learn to code is to actually write code. Not read about it, not watch a video — write it, break it, fix it. By the end of the session you'll have a working project that you built yourself, character by character.
 
 ---
 
-**Remember**: Commit and push your changes every time you finish working to keep your project safe!
+### **Step-by-Step: Getting Set Up**
 
-### 👥 Adding Joey as a Collaborator
 
-1. **Go to your repository** on GitHub.com
-2. **Click "Settings"** tab (next to Code, Issues, Pull requests, etc.)
-3. **Click "Collaborators"** in the left sidebar
-4. **Click "Add people"** button
-5. **Type your teacher's GitHub username:** `profJoey`
-6. **Click "Add `profJoey` to this repository"**
-7. **Choose permission level:** Select **"Write"**
+**1\. Click the green "Use this template" button**
 
-**What This Does**
+This creates a brand new repository under your own GitHub account, pre-loaded with the starting files.
 
-- I can view your code and progress
-- I can leave comments and feedback on your work
-- I can see your commit history
-- You keep full ownership of your repository
+**2\. Name your repository**
 
-### 🌐 Publishing to GitHub Pages
+Use this naming convention:
 
-Once your work is saved:
+`f26-nyu-codealong-01-lastname-firstname`
 
-1. **Go to your repository Settings** on GitHub.com
-2. **Scroll to "Pages" section**
-3. **Under "Source", select "Deploy from a branch"**
-4. **Choose "main" branch and "/ (root)" folder**
-5. **Click "Save"**
-6. **In about 10 minutes, your site will be available at:** `https://yourusername.github.io/repository-name`
+**3\. Click "Create repository from template"**
 
-## 🧩 Installed Extensions
+GitHub copies the files and takes you to your new repo page.
 
-What Each Extension Does:
+**4\. Click the green "Code" button → "Create Codespace"**
 
-- **[ms-vscode.live-server](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)**:
-  Right-click any HTML file and "Open with Live Server" for instant preview
-- **[esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)**:
-  Automatically formats your HTML, CSS, JS code
-- **[formulahendry.auto-rename-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)**:
-  When you rename an opening tag, it automatically renames the closing tag
-- **[ms-vscode.vscode-html-css-preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-html-css-preview)**:
-  Preview HTML files directly in VS Code
-- **[ritwickdey.liveserver](https://marketplace.visualstudio.com/items?itemName=ritwickdey.liveserver)**:
-  Alternative live server (backup option)
-- **[htmlhint.vshtmlhint](https://marketplace.visualstudio.com/items?itemName=htmlhint.vshtmlhint)**:
-  Lints and validates HTML code for errors and best practices
-- **[zignd.html-css-class-completion](https://marketplace.visualstudio.com/items?itemName=zignd.html-css-class-completion)**:
-  Provides CSS class name completion in HTML files
+**5\. Wait about 5 minutes while it boots up**
+
+This is normal. Codespaces is spinning up a virtual computer for you in the cloud, installing dependencies, and opening VS Code in your browser. Grab a sip of water while it loads.
+
+**7\. You're ready**
+
+When the browser tab opens to VS Code, open the `script.js` file in the file explorer on the left. You should see an array of pigeon facts. That's your starting point — everything else (the HTML, the CSS, the button) we'll build together in class.
+
+---
+
+## **GitHub Codespaces — A Brief Guide**
+
+### **What Is It?**
+
+Codespaces is a development environment that runs entirely in your browser. Instead of installing software on your own computer, you get a virtual computer in the cloud — pre-configured and ready to code — that you access through a web browser. Microsoft (which owns GitHub) hosts it, and NYU provides access through the GitHub Education Student Pack.
+
+### **What It Saves Us From**
+
+Normally, getting a development environment set up requires installing and configuring a bunch of tools:
+
+* A code editor (VS Code)  
+* A terminal (command line)  
+* Git (version control)  
+* Node.js, Python, or whatever runtime the project needs  
+* Extensions, themes, settings
+
+Each one of these can break in unique ways depending on your operating system, your computer's permissions, or just bad luck. **Codespaces eliminates all of that.** You click one button and you're in a fully working environment. No "it works on my machine" problems.
+
+### **How It Works (High Level)**
+
+1. A project lives in a GitHub repository.  
+2. You click the green **Code** button and select **Open with Codespaces**.  
+3. GitHub spins up a lightweight virtual machine running Linux, installs the project's dependencies automatically, and opens a browser-based version of VS Code.  
+4. You code, save, and commit just like you would on your local machine.  
+5. When you're done, you stop the Codespace. Next time you come back, everything is exactly where you left it.
+
+The environment is defined by a file called `devcontainer.json` (or `.devcontainer/`) in the repository. It's like a recipe that tells GitHub "this project needs X, Y, and Z."
+
+### **The Catch: It's Slow to Start (And Why)**
+
+A cold start takes **1–3 minutes**. Here's why:
+
+* **A new virtual machine has to boot.** Codespaces isn't "running" until you open it. There's no always-on computer — one is created for you on demand. That means spinning up an OS from scratch.  
+* **Your dependencies install.** If the project requires packages or libraries, Codespaces runs the install process when it starts. This is the same `npm install` or `pip install` you'd run locally — it just happens automatically.  
+* **Extensions and settings sync.** VS Code loads your extensions, themes, and preferences from your GitHub account.
+
+**Once it's running, it's fast.** The delay is only on the first launch of the day (or after you've manually stopped the Codespace). If you keep it open between sessions, there's no wait.
+
+### **Tips**
+
+* **Don't close your Codespace mid-session.** Just leave the tab open. If you close it, stop the Codespace from the GitHub dashboard so it doesn't eat into your monthly usage hours.  
+* **Your work is saved automatically.** Even if the Codespace stops, the files are stored on GitHub. You won't lose anything.  
+* **You get a fixed number of free hours per month** through the GitHub Student Developer Pack. A cold start uses some of those hours just booting up, so it's worth keeping one Codespace alive while you're actively working.  
+* **If you need to work offline,** you can always install VS Code and Git locally instead but it does take some set up — Codespaces is a convenience, not a requirement.
